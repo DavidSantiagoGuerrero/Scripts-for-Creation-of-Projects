@@ -28,8 +28,8 @@ echo
 # Create the project
 if [ "$project" == "1" ]; then
     mkdir "$name-PROJECT"
-    ./create-backend-project.sh "$name-BACKEND"
-    ./create-frontend-project.sh "$name-FRONTEND"
+    ./create-backend-project.sh "$name"
+    ./create-frontend-project.sh "$name"
 else
     ./create-frontend-project.sh "$name"
 fi
