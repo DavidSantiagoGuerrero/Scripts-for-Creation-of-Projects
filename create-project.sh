@@ -22,7 +22,7 @@ if [ "$project" != "1" ] && [ "$project" != "2" ]; then
 fi
 
 # Ask for the name of the project
-read -e -p $'Enter the name of your project (If you selected option 1, we will add \'-BACKEND\' and \'-FRONTEND\' at the end of the name):\n> ' name 
+read -e -p $'Enter the name of your project (If you selected option 1, we will add \'-BACKEND\' and \'-FRONTEND\' at the end of the name):\n> ' name
 echo
 
 # Create the project
