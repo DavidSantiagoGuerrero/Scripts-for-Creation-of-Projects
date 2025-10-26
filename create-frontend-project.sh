@@ -14,6 +14,14 @@ create_front() {
         *) echo "Error: Invalid option"; exit 1 ;;
     esac
 
+    read -e -p $'Choose your programming language:\n1 - JavaScript\n2 - TypeScript\n> ' language
+    echo
+
+    # Check the options 
+    if [ "$language" == "2" ]; then
+        framework_name="$framework_name-ts"
+    fi
+
     # Initialize the project
     echo "Creating project $1"
     echo | npm create vite@latest -y $1 -- --template $framework_name
