@@ -32,6 +32,10 @@ create_front() {
     echo $'\n# Environment variables' >> .gitignore
     echo ".env" >> .gitignore
 
+    # Git init
+    npm i
+    git init
+
     # Create basic folder structure
     cd "src"
     mkdir "api"
