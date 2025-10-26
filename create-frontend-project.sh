@@ -49,6 +49,7 @@ echo $'|                               |'
 echo $'================================='
 
 name=$1
+cd "$2"
 
 # Check if the project includes backend
 if [ ! -d "$name-PROJECT" ]; then
@@ -58,4 +59,4 @@ else
     create_front "$name-FRONTEND"
 fi
 
-echo "Frontend created successfully"
+echo "Frontend created successfully on $2"
